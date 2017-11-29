@@ -88,6 +88,7 @@ public class ClienteListaActivity extends AppCompatActivity {
                     intentLigar.setData(Uri.parse("tel:" + cliente.getTelefone()));
                     item.setIntent(intentLigar);
                 }
+                
                 break;
             case R.id.item_deletar:
                 ClienteDao dao = new ClienteDao(this);
